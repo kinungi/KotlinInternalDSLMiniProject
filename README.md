@@ -9,6 +9,7 @@ The result of the implementation will show some sort of hierarchy chaining] of t
 This DSL is aimed to show some progress on code readability and quicker ways to modify the code, 
 that would not perhaps be possible if we were to use Java syntax. Here is a code snippet without DSL. 
 
+
 val rooms =  mutableListOf<Room>()
 val people = mutableListOf<Person>()
 people.add(Person("Inge", 55))
