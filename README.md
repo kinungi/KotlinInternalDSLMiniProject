@@ -1,5 +1,5 @@
 
-#Internal DSL in Kotlin for a Simple House Game
+#Internal DSL in Kotlin for a Simple Game
 
 The idea is to create a model to simulate a kind of “house game” where objects and their contents are described.  
 The intention is to use some dummy objects, infix functions, lambda with receivers, extension functions 
