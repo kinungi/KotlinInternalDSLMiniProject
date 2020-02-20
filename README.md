@@ -1,5 +1,6 @@
 
-#Internal DSL in Kotlin for a Simple House Game
+  Internal DSL in Kotlin for a Simple House Game
+  
 The idea is to create a model to simulate a kind of “house game” where objects and their contents are described.  
 The intention is to use some dummy objects, infix functions, lambda with receivers, extension functions 
 to help reduce DSL fluency and enhance readability.
@@ -10,13 +11,5 @@ This DSL is aimed to show some progress on code readability and quicker ways to 
 that would not perhaps be possible if we were to use Java syntax. Here is a code snippet without DSL. 
 
 
-val rooms =  mutableListOf<Room>()
-val people = mutableListOf<Person>()
-people.add(Person("Inge", 55))
-people.add(Person("Chris", 45))
-people.add(Person("Sebastian", 24))
-val room1 = Room(people)
-rooms.add(room1)
-val house = House(rooms)
-println(house)`
+
 
