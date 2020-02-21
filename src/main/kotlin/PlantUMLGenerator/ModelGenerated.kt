@@ -2,27 +2,54 @@ package PlantUMLGenerator
 
 
 /*
-startuml
- class HouseBuilder {
-  +houseGame.house
-  --
-  +build()
-  +houseGame.house()
+ @startuml
+
+ class House{
+
++build()
++containing()
  }
- class houseGame.HouseBuilder{
- +people
+  House "1..*"  -  "1..*" Room
+ House *-- Room
+
+ class Room{
+ -name:String
  --
  +build()
- +person()
+ +room()
  }
-  HouseBuilder  "1" -- "1..*" houseGame.HouseBuilder
- class houseGame.PersonBuilder{
-- name: String
--age: Int
---
-+build()
+ class Person {
+ - name : String
+ - age : Int
+ --
+ +build()
+ +people()
  }
- houseGame.HouseBuilder "0" -- "1..*" houseGame.PersonBuilder
+  Room "0..*"  -  "1..*" Person
 @enduml
-
  */
+
+
+/*
+ @startuml
+  class entity{
+ -name:String
+ }
+ class attribute{
+ -name: String
+ -age: Int
+ -type: String
+ }
+  entity "0..*"  -  "1..*" attribute
+
+ class relation{
+ liveInRoom()
+ containRooms()
+ }
+   entity "1..*"  -  "1..*" relation
+ @enduml
+*/
+
+
+//HouseBuilder "0..*"  -  "1..*" RoomBuilder
+//(HouseBuilder, RoomBuilder) .. PersonBuilder
