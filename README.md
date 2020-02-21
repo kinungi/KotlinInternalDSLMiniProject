@@ -2,7 +2,7 @@
 # Internal DSL in Kotlin for a Simple Game
 
 The idea is to create a model to simulate a kind of “house game” where objects and their contents are described.  
-The implementations are based Kotlin syntax and its functionalities such as companion objects, infix functions, 
+The implementations are based on Kotlin syntax and its functionalities such as companion objects, infix functions, 
 lambda with receivers, extension functions to help reduce DSL fluency and enhance readability.
 
 The model consists of three objects: the house, the rooms it contains, and the people who are in those rooms. 
