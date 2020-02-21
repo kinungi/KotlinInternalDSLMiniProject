@@ -1,5 +1,5 @@
 
-#Internal DSL in Kotlin for a Simple Game
+# Internal DSL in Kotlin for a Simple Game
 
 The idea is to create a model to simulate a kind of “house game” where objects and their contents are described.  
 The implementations are based Kotlin syntax and its functionalities such as companion objects, infix functions, 
@@ -42,7 +42,7 @@ val room1 =  Room(listOf(
 This code snippet is somewhat easier to write, read and maintain than 
 the previous even though the hierarchy is not appealing yet. 
 If the model gets larger the problem will be just like the previous code 
-#DSL
+# DSL
 Following the examples mostly used by DSL authors, the previous code can already 
 be significantly improved by using Kotlin functions such as  Lambda with receiver, 
 infix functions and extension functions.   
@@ -95,11 +95,11 @@ The code is organised into four packages:
 - plantUmlGenerator - contains the auto generated model
 - NoDSL- contains implementation sample without DSL.
 
-#Output
+# Output
 ```kotlin
 House(rooms=[Room(people=[Person(name=chris, age=47), Person(name=Inge, age=54)]), Room(people=[Person(name=Francis, age=29)])])
 ```
-#future work
+# future work
 As mentioned in the beginning, the idea was to implement a very simple internal DSL. 
 More like chaining objects and read the code like a sentence. 
 The implementation is very basic and more logic can be extended/implemented as future work.  
