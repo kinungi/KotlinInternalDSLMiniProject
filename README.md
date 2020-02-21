@@ -13,7 +13,9 @@ data class House(val rooms: List<Room>)
 ```
 The result of the implementation will show some sort of hierarchy [chaining] of the objects. 
 The DSL is aimed to show some progress on code readability and easier ways to modify the code, 
-that perhaps would not be possible if we were to use Java. 
+that perhaps would not be possible if we were to use Java.
+
+Here is a code snippet loosely translated from java to kotlin
 ```kotlin
 val rooms = mutableListOf<Room>() 
 val people = mutableListOf<Person>()
@@ -25,9 +27,8 @@ val people = mutableListOf<Person>()
  val house = House(rooms)
  println(house)
 ```
-We can see the above code is somewhat verbose, a non-tech guy might not understand what is going on here.
-Let slightly improved this code by nesting the calls and using 
-the Kotlin factory functions for collections provided by Kotlin.
+Now, the above code is somewhat verbose, a non-tech guy might not understand what is going on here. 
+Let slightly improved this code by nesting the calls and using the Kotlin factory functions for collections provided by Kotlin.
 ```kotlin
 val room1 =  Room(listOf(
        Person("Mariana", 33),
@@ -39,7 +40,7 @@ val room1 =  Room(listOf(
   val house = House(listOf(room1,room2,room3))
   println(house)
 ```
-This code snippet is somewhat easier to write, read and maintain than 
+The code snippet is somewhat easier to write, read and maintain than 
 the previous even though the hierarchy is not appealing yet. 
 If the model gets larger the problem will be just like the previous code 
 # DSL
