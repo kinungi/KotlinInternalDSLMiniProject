@@ -11,9 +11,9 @@ data class Person(val name: String, val age:Int)
 data class Room(val people:List<Person>)
 data class House(val rooms: List<Room>)
 ```
-The result of the implementation will show some sort of hierarchy [chaining] of the objects.
+The result of the implementation will show some sort of hierarchy [chaining] of the objects. 
 The DSL is aimed to show some progress on code readability and easier ways to modify the code, 
-that would not perhaps be possible if we were to use Java syntax. Here is a code snippet without DSL. 
+that perhaps would not be possible if we were to use Java. 
 ```kotlin
 val rooms = mutableListOf<Room>() 
 val people = mutableListOf<Person>()
